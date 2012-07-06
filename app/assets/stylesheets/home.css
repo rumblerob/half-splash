@@ -1,0 +1,132 @@
+html, body {
+  background: white;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position:relative;
+  font-family: Arial;
+}
+
+#background {
+  position:absolute;
+  top: -20%;
+  left:0;
+  min-width:100%;
+}
+
+.positioner-1 {
+  width: 82%;
+  margin:0 auto;
+  height: 100%;
+}
+
+.positioner-2 {
+  height:50%;
+}
+
+.block {
+  position:relative;
+  top: -200px;
+  color: white;
+  text-shadow: #000 -1px -1px 0;
+  width: 440px;
+  text-align: center;
+}
+
+.block-info {
+  padding: 30px 20px;
+  background: rgba(0, 0, 0, .7);
+  border:1px solid rgba(0,0,0,.7);
+  box-shadow: inset 0 0 43px rgba(0,0,0,0.9);
+}
+
+.block h1 {
+  letter-spacing: -0.04em;
+  font-size: 64px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 10px 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+.block h2 {
+  letter-spacing: -0.04em;
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 23px 0;
+}
+
+
+.block-info em {
+  font-size: 14px;
+  font-style:italic;
+  display:block;
+  margin-bottom: 4px;
+}
+
+.input-text {
+  margin:0;
+  display:inline-block;
+  width: 292px;
+  background: white;
+  color : black;
+  height:20px;
+  border:0;
+  padding: 6px 8px;
+  margin-bottom:0px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,.9);
+  border: 1px solid black;
+  border-right: none;
+}
+
+.input-submit {
+  display:inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 7px 24px;
+  background: -moz-linear-gradient(
+    top,
+    #42ff42 0%,
+    #146600);
+  background: -webkit-gradient(
+    linear, left top, left bottom, 
+    from(#42ff42),
+    to(#146600));
+  border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  -webkit-border-radius: 0 3px 3px 0;
+  border: 1px solid black;
+  text-shadow: -1px -1px 0px rgba(000, 000, 000, 0.8);
+  margin: 0;
+  font-weight: bold;
+  height: 34px;
+  width: 70px;
+}
+
+#credit {
+  position:fixed;
+  color:black;
+  bottom:10px;
+  right:10px;
+  font-size:12px;
+}
+
+.success, #invite-form {
+  height:57px;
+}
+
+.success {
+  background: url(check.png) no-repeat 50px;
+  line-height: 56px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+  padding-left: 44px;
+}
+
+::-webkit-input-placeholder  { color:#333; }
+input:-moz-placeholder { color:#333; }

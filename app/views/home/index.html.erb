@@ -1,0 +1,26 @@
+<script type="text/javascript">
+	$(function() {
+		$('#invite-form').ajaxForm({
+			success: function() {
+				console.log("yay");
+				$("#invite-form").after("<div class='success'>We'll keep you posted.</div>").remove();
+			}
+		});
+	});
+</script>
+<img src="/assets/bongo.jpg" id="background"/>
+<div class="positioner-1">
+	<div class="positioner-2"></div>
+	<!-- <img src="/assets/halfpastnow.png" /> -->
+	<div class="block">
+		<h1>half past now.</h1>
+		<div class="block-info">
+			<h2>Finding things to do in Austin since a couple months from now.</h2>
+			<form id="invite-form" action="/home/form" method="post">
+				<em>Enter your email address and we'll put you on our invite list.</em>
+				<input class="input-text" name="email" type="text" placeholder="email address" /><input class="input-submit" type="submit" value="Go"/>
+			</form>
+		</div>
+	</div>
+</div>
+<a href="http://hdrgolf.wordpress.com/" id="credit" target="_blank">Photo by Carlton Wade</a>
