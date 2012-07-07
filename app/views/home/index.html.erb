@@ -2,7 +2,6 @@
 	$(function() {
 		$('#invite-form').ajaxForm({
 			success: function() {
-				console.log("yay");
 				$("#invite-form").after("<div class='success'>We'll keep you posted.</div>").remove();
 			}
 		});
